@@ -1,0 +1,188 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+
+        >
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_arrow_left_black_24dp"
+            android:padding="@dimen/_8sdp"
+            android:layout_centerVertical="true"
+            tools:ignore="ContentDescription" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_centerInParent="true"
+            android:text="@string/cart"
+            tools:ignore="RelativeOverlap" />
+
+<androidx.appcompat.widget.AppCompatTextView
+    android:id="@+id/tvCheckout"
+    android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+    android:padding="@dimen/_5sdp"
+            android:text="@string/checkout"
+    android:textAllCaps="true"
+            tools:ignore="RelativeOverlap" />
+
+
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_continue_buy_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:gravity="center"
+        android:text="@string/continue_buying_other_cards"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_below="@id/rlToolbar"
+        />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/llCheckoutAndRefCode"
+                android:layout_below="@id/secion_total"
+                />
+
+
+    <LinearLayout
+        android:id="@+id/llCheckoutAndRefCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/etReferralCode"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_silver_round_corner"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:maxLength="50"
+            android:textColor="@color/black"
+            android:hint="@string/referral_code"
+            android:visibility="gone"
+            />
+
+
+    <LinearLayout
+        android:id="@+id/llCheckout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="end"
+        android:padding="@dimen/_10sdp"
+        >
+
+        <Button
+            android:id="@+id/procedToCheckOutBtn"
+            android:background="@drawable/bg_red_round_corner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:text="@string/proceed_to_checkout"
+            android:textAllCaps="true"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:textColor="@color/white"
+            />
+
+
+        <TextView
+            android:id="@+id/tvCurrency"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@drawable/bg_red_round_corner"
+            tools:text="SAR"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/_9ssp"
+            />
+
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/secion_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/textSecondary"
+        android:layout_below="@id/rlToolbar"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/totalTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/total"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+        <com.shivam.ecom.common.ui.CurrencyView
+            android:id="@+id/cardCostTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/default_currency"
+            app:amountText="0"
+            app:amountTextAppearance="@style/TextBlack.Medium.Bold"
+            app:currencyTextAppearance="@style/TextBlack.Small.Bold" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

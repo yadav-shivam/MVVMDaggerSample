@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp"
+            >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civUserImage"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_gravity="center_vertical"
+        app:civ_border_width="@dimen/_1sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+        android:src="@mipmap/ic_launcher"
+
+
+        />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone"
+                >
+
+            <TextView
+                android:id="@+id/tvPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="00365"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/_20ssp"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/points"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_14ssp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_gravity="center_horizontal"
+                />
+
+<TextView
+                android:id="@+id/tvBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="00365"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+    android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_18ssp"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/current_balance"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_14ssp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_gravity="center_horizontal"
+                />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.8"
+            android:layout_margin="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_8sdp"
+            app:cardUseCompatPadding="true"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_20sdp"
+                >
+
+
+                <TextView
+                    android:id="@+id/usernameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_large"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextPrimary.Large"
+                    android:padding="@dimen/_10sdp"
+                    android:background="@color/colorLightBlue"
+                    tools:text="00962797132138"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/fullNameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:padding="@dimen/_12sdp"
+                    android:background="@color/colorLightBlue"
+                    tools:text="Hisham Ghatasheh"
+                    android:textColor="@color/colorTextBlack"
+                    />
+
+               <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_12sdp"
+                    tools:text="Hisham Ghatasheh"
+                   android:textColor="@color/colorTextBlack"
+                   />
+
+                <RelativeLayout
+                    android:id="@+id/section_mobile_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorLightBlue"
+                    android:padding="@dimen/_10sdp"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/ivCountryCode"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_centerVertical="true"
+                        android:scaleType="fitStart"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tvPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        tools:text="0808049897"
+                        android:layout_toEndOf="@id/ivCountryCode"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:textColor="@color/colorTextBlack"
+                        />
+
+
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/tvReferralCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_12sdp"
+                    tools:text="@string/referral_code"
+                    android:textColor="@color/colorTextBlack"
+                    />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

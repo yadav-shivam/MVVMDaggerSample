@@ -1,0 +1,82 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+  <style name="EcomTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="android:textColorPrimary">@color/textPrimary</item>
+    <item name="android:textColorSecondary">@color/textSecondary</item>
+    <item name="android:windowBackground">@color/colorPrimary</item>
+
+    <!-- Toolbar title color-->
+    <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+
+    <item name="android:listDivider">@drawable/list_divider</item>
+
+    <item name="editTextStyle">@style/EditTextStyle</item>
+  </style>
+
+  <style name="AppTheme" parent="EcomTheme" />
+  <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.ActionBar"/>
+
+  <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+  <style name="ToolbarTitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+    <item name="android:fontFamily">@font/cairo</item>
+  </style>
+
+    <style name="EditTextStyle" parent="@style/Widget.AppCompat.EditText">
+    <item name="android:importantForAutofill" tools:targetApi="o">noExcludeDescendants</item>
+  </style>
+
+  <style name="TextPrimary.Tiny" parent="TextAppearance.AppCompat.Small">
+    <item name="android:textColor">@color/textPrimary</item>
+    <item name="android:textSize">9sp</item>
+  </style>
+
+    <style name="TextPrimary.Medium" parent="TextAppearance.AppCompat.Medium">
+    <item name="android:textColor">@color/textPrimary</item>
+  </style>
+
+  <style name="TextPrimary.Large" parent="TextAppearance.AppCompat.Large">
+    <item name="android:textColor">@color/textPrimary</item>
+  </style>
+
+    <style name="TextDisabled.Medium" parent="TextAppearance.AppCompat.Medium">
+    <item name="android:textColor">@color/disabled</item>
+  </style>
+
+  <style name="TextSubhead">
+    <item name="android:textColor">@color/textSubhead</item>
+    <item name="android:textSize">9sp</item>
+  </style>
+
+    <style name="TextBlack.Medium.Bold" parent="TextAppearance.AppCompat.Medium">
+    <item name="android:textColor">@color/black</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="TextBlack.Small.Bold" parent="TextAppearance.AppCompat.Caption">
+    <item name="android:textColor">@color/black</item>
+    <item name="android:textStyle">bold</item>
+
+  </style>
+
+    <style name="ColoredButton">
+    <item name="android:background">@color/colorAccent</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:textAllCaps">true</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:gravity">center</item>
+    <item name="android:minHeight">48dp</item>
+    <item name="android:foreground">?attr/selectableItemBackground</item>
+  </style>
+
+
+    <style name="SettingsText">
+    <item name="android:padding">@dimen/spacing_large</item>
+    <item name="android:textAppearance">@style/TextPrimary.Medium</item>
+    <item name="android:foreground">?attr/selectableItemBackground</item>
+  </style>
+
+</resources>

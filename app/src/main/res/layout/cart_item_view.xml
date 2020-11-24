@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#f3fcff"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_15sdp">
+
+
+    <ImageView
+        android:id="@+id/img_icon"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_weight="0.5"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/ic_launcher"
+
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/txt_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            tools:text="Mobility 15 SAR"
+            />
+
+        <TextView
+            android:id="@+id/txt_sub_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Mobility 15 SAR"
+            android:textSize="@dimen/_10ssp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/_10sdp"
+            >
+
+        <ImageView
+            android:id="@+id/ivFav"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:background="@drawable/bg_black_round_corner_solid_white"
+            android:padding="@dimen/_6sdp"
+            app:srcCompat="@drawable/ic_cart_favourite" />
+
+
+        <ImageView
+            android:id="@+id/img_item_minus"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:background="@drawable/bg_black_round_corner_solid_white"
+            android:src="@drawable/ic_cart_delete"
+            android:padding="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/txt_quantity"
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:text="100"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        android:layout_gravity="center_vertical"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+
+        >
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinnerQuantity"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:scrollbars="vertical"
+
+        />
+
+    <Button
+        android:id="@+id/btnQuantityPicker"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:padding="@dimen/_5sdp"
+        android:background="@drawable/red_drop_down_white_bg"
+        android:clickable="false"
+        />
+    </FrameLayout>
+
+
+</LinearLayout>

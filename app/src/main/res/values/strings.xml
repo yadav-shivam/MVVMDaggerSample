@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Ecom</string>
+    <string name="login">LogIn</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_mobile_number">Mobile Number</string>
+    <string name="hint_password">Password</string>
+
+    <string name="error_password">Password should be at least 3 characters</string>
+
+    <string name="error_general">Something went wrong! Please try again!</string>
+    <string name="error_required">Required</string>
+
+    <string name="common_ok">Okay</string>
+    <string name="common_loading">Loading…</string>
+    <string name="common_cancel">Cancel</string>
+
+    <string name="title_login">Login</string>
+    <string name="title_products">Products</string>
+    <string name="title_order_details">Order Details</string>
+    <string name="title_thank_you">Thank You!</string>
+    <string name="title_quantity_selection">Quantity Selection</string>
+
+    <string name="title_my_profile">My Profile</string>
+    <string name="title_logout">Logout</string>
+
+
+    <string name="balance_format" formatted="false">Balance %s</string>
+    <string name="search">Search</string>
+    <string name="checkout">checkout</string>
+    <string name="not_available">not available</string>
+
+
+    <!-- Thank you -->
+    <string name="order_find_in_my_orders">You can find it in </string>
+    <string name="order_ordered_successfully_pt1">Order </string>
+    <string name="order_ordered_successfully_pt2"> was\ndone successfully</string>
+    <string name="order_count_type">%1$d %2$s\nCards</string>
+    <string name="current_balance">Current Balance</string>
+    <string name="default_currency">SAR</string>
+    <string name="order_buy_again">Buy Again</string>
+
+    <!-- Contact Us -->
+
+    <!-- More -->
+    <string name="more_logout_message">Are you sure you want to logout?</string>
+    <string name="share_intent_title">Send To</string>
+    <string name="points">Points</string>
+
+    <!-- Share -->
+
+    <!-- Printer -->
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="title_price">PRICE</string>
+    <string name="title_cost">COST</string>
+    <string name="continue_buying_other_cards">Continue buying other cards</string>
+    <string name="proceed_to_checkout">Proceed To checkout</string>
+    <string name="total">Total</string>
+    <string name="there_is_no_item_in_cart">There is no item in cart</string>
+    <string name="out_of_stock">Out of stock</string>
+    <string name="item_has_been_added">Item has been added</string>
+    <string name="add_to_cart">Add to cart</string>
+
+    <string name="lbl_alert">Alert</string>
+
+    <!-- reCAPTCHA -->
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="already_have_an_acoun">Already have an acount?</string>
+
+    <string name="permission_denied">Permission Denied</string>
+    <string name="cart">CART</string>
+    <string name="login_to_check_profile">Login to check profile.</string>
+    <string name="login_caps">LOGIN</string>
+    <string name="cancel">CANCEL</string>
+    <string name="please">Please</string>
+    <string name="create_account">Create account</string>
+    <string name="login_to_perform">Login to perform this action.</string>
+    <string name="quantity">Quantity</string>
+    <string name="referral_code">Referral Code:</string>
+    <string name="ok">Ok</string>
+
+</resources>

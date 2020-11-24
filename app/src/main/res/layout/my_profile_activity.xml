@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/tutorial1_grad"
+    tools:context=".more.profile.MyProfileActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        >
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_back_white_24dp"
+            android:padding="@dimen/_5sdp"
+            tools:ignore="ContentDescription"
+            android:layout_centerVertical="true"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_my_profile"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_18ssp"
+            android:layout_centerVertical="true"
+
+
+
+            />
+
+    </RelativeLayout>
+
+    <include layout="@layout/my_profile_content"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

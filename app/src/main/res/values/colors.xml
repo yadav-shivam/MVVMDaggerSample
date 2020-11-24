@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#FFFFFF</color>
+  <color name="colorPrimaryDark">#6C6C6C</color>
+    <color name="colorAccent">#00aced</color>
+    <color name="textPrimary">#5E5E5E</color>
+  <color name="textSecondary">#E8E8E8</color>
+  <color name="backgroundSearchBar">#e7f8ff</color>
+  <color name="textSubhead">#909090</color>
+  <color name="icons">#FFFFFF</color>
+  <color name="divider">#e1e1e1</color>
+  <color name="disabled">#D2D2D2</color>
+    <color name="white">#FFF</color>
+  <color name="black">#000000</color>
+    <color name="colorWhiteTransparent">#CCffffff</color>
+
+
+  <!--Calender View Colors-->
+
+    <color name="color_light_grey">#C9C9CE</color>
+  <color name="color_milky_white">#F7F7F7</color>
+    <color name="colorTextBlack">#323241</color>
+
+  <color name="colorLightBlue">#f3fbff</color>
+
+
+</resources>

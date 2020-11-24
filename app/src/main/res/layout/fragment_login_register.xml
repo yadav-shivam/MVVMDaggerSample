@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tutorial1_grad"
+    tools:context="com.shivam.ecom.loginregister.LoginRegisterFragment">
+
+
+    <ImageView
+        android:id="@+id/img_cardless"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_margin="@dimen/_32sdp"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/card_itunes" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_60sdp"
+        android:layout_marginRight="@dimen/_60sdp"
+        android:paddingBottom="@dimen/_50sdp"
+
+        >
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_stroke_blue_round_corner"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/sign_in"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_14ssp" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/bg_white_solid_round_corner"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/sign_up"
+        android:textColor="#323242"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_14ssp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

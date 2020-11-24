@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:padding="@dimen/_5sdp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tvHeaderName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp"
+        tools:text="Mobility 15 SAR"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_gravity="center_vertical"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:id="@+id/tvCartCount"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:background="@drawable/bg_blue_round_corner"
+        android:textSize="@dimen/_8ssp"
+        tools:text="1"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="@dimen/_5sdp"
+
+        />
+
+    <ImageView
+        android:id="@+id/ivCartHeader"
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:src="@drawable/ic_header_cart"
+        android:layout_gravity="center_vertical"
+        android:padding="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+
+        />
+
+
+
+
+
+
+</LinearLayout>
